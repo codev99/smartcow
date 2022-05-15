@@ -31,5 +31,56 @@ header {
       margin: 0 10px;
     }
   }
-
 }
+
+  .headerOverlay {
+    padding: 40px 0 30px;
+    margin: 0 30px;
+
+    .headerOverlayContent {
+      z-index: 10;
+      position: relative;
+
+      .headerTitle {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          @include h1;
+          color: $color-blue-dark;
+          border-bottom: solid 1px $color-gray-light;
+        }
+      }
+      textarea {
+        font-size: 15px;
+        font-weight: 400;
+        color: $color-gray-300;
+        border-bottom: solid 1px $color-gray-light;
+        margin: 20px 0;
+      }
+      
+      .tags {
+        @include tags;
+        justify-content: flex-start;
+      }
+
+      .tag {
+        @include tag;
+      }
+      
+      .headerTools {
+        margin: 30px 0;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      background-color: $color-lightest;
+      opacity: 0.9;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
