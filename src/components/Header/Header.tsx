@@ -30,3 +30,16 @@ export const HeaderVideoBrowse = () => {
     </header>
   )
 }
+
+export const HeaderProfile = () => {
+  return (
+    <header>
+      <div className={styles.headerTitle}>
+        <div className={styles.title}>My Account</div>
+      </div>
+      <div className={styles.headerTools}>
+        <Button type={ButtonType.linkRed} label="Logout" />
+      </div>
+    </header>
+  )
+}

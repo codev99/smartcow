@@ -43,3 +43,8 @@
   background-color: $color-gray-light;
   color: $color-gray-900;
 }
+
+.linkRed {
+  @include filledButton;
+  color: $color-error;
+}

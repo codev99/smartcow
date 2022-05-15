@@ -3,7 +3,7 @@ import { ReactComponent as Video } from "../../assets/icons/video.svg";
 import { ReactComponent as Browse } from "../../assets/icons/browse.svg";
 import { ReactComponent as Profile } from "../../assets/icons/profile.svg";
 import styles from "./Navbar.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Routes from "../../app/routes";
 
 export const Navbar = () => {
@@ -27,11 +27,11 @@ export const Navbar = () => {
         </NavLink>
       </div>
       
-      <div className={styles.footer}>
+      <Link to={Routes.PROFILE} className={styles.footer}>
         <IconButton>
           <Profile />
         </IconButton>
-      </div>
+      </Link>
     </div>
   )
 };
