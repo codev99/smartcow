@@ -17,3 +17,16 @@ export const HeaderVideo = () => {
     </header>
   )
 };
+
+export const HeaderVideoBrowse = () => {
+  return (
+    <header>
+      <div className={styles.headerTitle}>
+        <div className={styles.title}>Saved Videos</div>
+      </div>
+      <div className={styles.headerTools}>
+        <Button type={ButtonType.fillGreen} label="Create New" />
+      </div>
+    </header>
+  )
+}

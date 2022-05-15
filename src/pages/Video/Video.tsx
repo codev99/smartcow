@@ -1,5 +1,5 @@
 import { HeaderVideo } from "../../components/Header/Header";
-import { Layout2Cols } from "../../components/Layout2Cols/Layout2Cols";
+import { Layout2Cols } from "../../components/Layout/Layout2Cols";
 import { ActorThumbs } from "./components/ActorThumbs/ActorThumbs";
 import { Alignment } from "./components/Alignment/Alignment";
 import { Backgrounds } from "./components/Backgrounds/Backgrounds";

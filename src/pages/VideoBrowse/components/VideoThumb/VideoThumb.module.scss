@@ -1,0 +1,50 @@
+@import "../../../../global";
+
+.videoThumb {
+  background-color: $color-gray-lightest;
+  border-radius: 6px;
+  padding: 5px;
+  max-width: 280px;
+
+  .picture {
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+    }
+
+    button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+
+  .description {
+    @include p;
+    color: $color-gray-200;
+    text-align: center;
+  }
+
+    .tags {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 10px 0;
+
+    .tag {
+      color: $color-gray-900;
+      font-weight: 400;
+      font-size: 12px;
+      padding: 0 10px;
+      border: solid 1px $color-gray-900;
+      border-radius: 6px;
+      margin: 0 3px;
+    }
+  }
+}
