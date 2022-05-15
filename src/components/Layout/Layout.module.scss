@@ -1,0 +1,17 @@
+@import "../../global";
+
+.layout {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+
+  > nav {
+    width: rem(102);
+    border-right: solid 1px $color-darkest;
+    margin: rem(50) 0;
+  }
+
+  > section {
+    flex: 1;
+  }
+}

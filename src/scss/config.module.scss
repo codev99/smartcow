@@ -1,0 +1,7 @@
+@import "./constants";
+
+:export {
+  mobileBreakpoint: $phone-screen-width;
+  tabletBreakpoint: $tablet-screen-width;
+  desktopBreakpoint: $desktop-screen-width;
+}
