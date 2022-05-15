@@ -1,0 +1,30 @@
+@import "../../../../global";
+
+.backgrounds {
+ 
+  .imageList {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image {
+      padding: 5px;
+
+      .imageUpload {
+        width: 150px;
+        height: 85px;
+        background-color: $color-lightest;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+      }
+
+      label {
+        display: block;
+        font-size: 12px;
+        color: $color-blue-dark;
+        text-align: center;
+      }
+    }
+  }
+}

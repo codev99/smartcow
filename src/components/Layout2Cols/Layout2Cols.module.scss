@@ -1,0 +1,22 @@
+@import "../../global";
+
+.layout2Cols {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+
+  .col1 {
+    min-width: 300px;
+    padding: 20px;
+  }
+
+  .col2 {
+    flex: 1;
+    padding: 20px;
+    min-width: 550px;
+  }
+
+  @include max-width($tablet-screen-width) {
+    flex-direction: column-reverse;
+  }
+}

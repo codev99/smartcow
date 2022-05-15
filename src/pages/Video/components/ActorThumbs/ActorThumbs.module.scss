@@ -1,0 +1,15 @@
+@import "../../../../global";
+
+.actorThumbs {
+  display: flex;
+  flex-wrap: wrap;
+
+  .actor {
+    padding: 5px;
+
+    label {
+      display: block;
+      text-align: center;
+    }
+  }
+}
