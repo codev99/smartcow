@@ -1,0 +1,66 @@
+@import "../../../../global";
+
+.plans {
+  display: flex;
+
+  .plan {
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px;
+
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    ul {
+      li {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        display: flex;
+
+        .planIcon {
+          margin: 0 10px 0 5px;
+          svg {
+            fill: $color-darkest;
+          }
+        }
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 20px;
+
+      .priceCurrency {
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .priceValue {
+        font-size: 30px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .plan.selectedPlan {
+    background-color: $color-green;
+    color: $color-lightest;
+    margin-top: 0;
+
+    ul {
+      li {
+        .planIcon {
+          svg {
+            fill: $color-lightest;
+          }
+        }
+      }
+    }
+  }
+}
+
+  

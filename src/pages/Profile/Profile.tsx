@@ -2,7 +2,7 @@ import { HeaderProfile } from "../../components/Header/Header";
 import { Layout1Col } from "../../components/Layout/Layout1Col";
 import { Tabs } from "../Video/components/Tabs/Tabs";
 import { Billing } from "./components/Billing/Billing";
-import { Plan } from "./components/Plan/Plan";
+import { Plans } from "./components/Plans/Plans";
 import { ProfileForm } from "./components/ProfileForm/ProfileForm";
 
 export const Profile = () => {
@@ -12,7 +12,7 @@ export const Profile = () => {
       <Layout1Col>
         <Tabs
           labels={["Profile", "My Plan", "Billing"]}
-          panels={[<ProfileForm />, <Plan />, <Billing />]}
+          panels={[<ProfileForm />, <Plans />, <Billing />]}
         />
       </Layout1Col>
     </>

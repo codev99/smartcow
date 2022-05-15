@@ -1,0 +1,31 @@
+@import "../../../../global";
+
+.billing {
+  table {
+    width: 100%;
+    max-width: 680px;
+
+    thead {
+      th {
+        color: $color-gray-200;
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        opacity: 0.5;
+        padding: 10px 0;
+      }
+    }
+
+    tbody {
+      td {
+        color: $color-gray-200;
+        text-align: left;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+  
