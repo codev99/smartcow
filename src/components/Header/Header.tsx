@@ -43,3 +43,23 @@ export const HeaderProfile = () => {
     </header>
   )
 }
+
+export const HeaderLogin = () => {
+  return (
+    <header className={styles.noBorder}>
+      <div className={styles.headerTitle}>
+        <div className={styles.title}>Sign in</div>
+      </div>
+    </header>
+  )
+}
+
+export const HeaderSignup = () => {
+  return (
+    <header className={styles.noBorder}>
+      <div className={styles.headerTitle}>
+        <div className={styles.title}>Create an account</div>
+      </div>
+    </header>
+  )
+}

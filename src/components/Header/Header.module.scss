@@ -8,6 +8,10 @@ header {
   margin: 0 30px;
   border-bottom: solid 1px $color-gray-light;
 
+  &.noBorder {
+    border-bottom: none;
+  }
+
   .headerTitle {
     flex: 1;
     display: flex;

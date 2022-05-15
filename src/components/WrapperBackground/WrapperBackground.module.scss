@@ -1,0 +1,16 @@
+@import "../../global";
+
+.wrapperBackground {
+  position: relative;
+
+  .bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .content {
+    z-index: 1;
+    position: relative;
+  }
+}
