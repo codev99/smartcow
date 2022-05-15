@@ -44,6 +44,26 @@
         fill: $color-blue-dark;
       }
     }
-    
+  }
+
+  @include max-width($phone-screen-width) {
+    flex-direction: row;
+
+    .header {
+      flex-direction: row;
+
+      .logo {
+        margin: 0 rem(20) 0 0;
+      }
+
+      .navButton {
+        margin: rem(10);
+      }
+
+      .navButton:hover,
+      .navButtonSelected {
+        margin: rem(10);
+      }
+    }
   }
 }

@@ -14,4 +14,17 @@
   > section {
     flex: 1;
   }
+
+  @include max-width($phone-screen-width) {
+    display: block;
+    width: 100vw;
+
+    > nav {
+      height: auto;
+      width: 100%;
+      margin: 0;
+      border-right: none;
+      border-bottom: solid 1px $color-gray-light;
+    }
+  }
 }

@@ -35,6 +35,10 @@
   background-color: $color-blue-light;
   color: $color-blue-dark;
   border: solid 1px $color-blue-dark;
+
+  @include max-width($phone-screen-width) {
+    padding: 15px 30px;
+  }
 }
 
 .toggleGray {
@@ -42,6 +46,10 @@
   padding: 15px 50px;
   background-color: $color-gray-light;
   color: $color-gray-900;
+
+  @include max-width($phone-screen-width) {
+    padding: 15px 30px;
+  }
 }
 
 .linkRed {

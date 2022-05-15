@@ -31,6 +31,13 @@ header {
       margin: 0 10px;
     }
   }
+
+  @include max-width($phone-screen-width) {
+    &.headerVideo {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
 }
 
   .headerOverlay {

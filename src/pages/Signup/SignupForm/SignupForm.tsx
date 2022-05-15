@@ -25,7 +25,7 @@ export const SignupForm = () => {
         <Button
           type={ButtonType.fillGreen}
           label="Signup"
-          onClick={() => navigate(Routes.VIDEO)}
+          onClick={() => navigate(Routes.ROOT)}
         />
         <div className={styles.footer}>Already user? <Link to={Routes.ROOT}>Login</Link></div>
       </div>

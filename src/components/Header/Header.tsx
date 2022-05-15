@@ -8,7 +8,7 @@ export const HeaderVideo = () => {
 
   return (
     !showDescr ? (
-      <header>
+      <header className={styles.headerVideo}>
         <div className={styles.headerTitle} onClick={() => setShowDescr(true)}>
           <div className={styles.title}>Saying Hi to my customers</div>
           <img src={caretIcon} alt="Hi" />

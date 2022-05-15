@@ -4,6 +4,7 @@
   table {
     width: 100%;
     max-width: 680px;
+    min-width: 500px;
 
     thead {
       th {
@@ -25,6 +26,10 @@
         padding: 10px 0;
       }
     }
+  }
+
+  @include max-width($phone-screen-width) {
+    overflow-x: auto;
   }
 }
 

@@ -16,5 +16,9 @@
 
   @include max-width($tablet-screen-width) {
     flex-direction: column-reverse;
+
+    .col2 {
+      min-width: auto;
+    }
   }
 }
