@@ -2,7 +2,7 @@
 
 @mixin button {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 @mixin filledButton {
@@ -21,6 +21,12 @@
   @include filledButton;
   background-color: $color-gray-light;
   color: $color-gray-900;
+}
+
+.fillGreen {
+  @include filledButton;
+  background-color: $color-green;
+  color: $color-lightest;
 }
 
 .toggleBlue {

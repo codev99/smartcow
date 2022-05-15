@@ -1,5 +1,31 @@
 @import "../../global";
 
 header {
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 30px;
+  margin: 0 30px;
+  border-bottom: solid 1px $color-gray-light;
+
+  .headerTitle {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .title {
+      @include h1;
+    }
+
+    img {
+      margin: 0 20px;
+    }
+  }
+
+  .headerTools {
+    button {
+      margin: 0 10px;
+    }
+  }
+
 }

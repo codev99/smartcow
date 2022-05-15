@@ -2,8 +2,8 @@ const Routes = {
   ROOT: "/",
   LOGIN: "login",
   SIGNUP: "signup",
-  VIDEOBROWSE: "video",
-  VIDEO: "video/:videoId",
+  VIDEOBROWSE: "browse",
+  VIDEO: "video",
   PROFILE: "profile",
 };
 

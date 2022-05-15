@@ -3,6 +3,8 @@ import { ReactComponent as Video } from "../../assets/icons/video.svg";
 import { ReactComponent as Browse } from "../../assets/icons/browse.svg";
 import { ReactComponent as Profile } from "../../assets/icons/profile.svg";
 import styles from "./Navbar.module.scss";
+import { NavLink } from "react-router-dom";
+import Routes from "../../app/routes";
 
 export const Navbar = () => {
   return (
@@ -10,13 +12,19 @@ export const Navbar = () => {
       <div className={styles.header}>
         <Logo className={styles.logo} />
 
-        <NavButton>
+        <NavLink
+          to={Routes.VIDEO}
+          className={({ isActive }) => isActive ? styles.navButtonSelected : styles.navButton}
+        >
           <Video />
-        </NavButton>
+        </NavLink>
 
-        <NavButton>
+        <NavLink
+          to={Routes.VIDEOBROWSE}
+          className={({ isActive }) => isActive ? styles.navButtonSelected : styles.navButton}
+        >
           <Browse />
-        </NavButton>
+        </NavLink>
       </div>
       
       <div className={styles.footer}>
@@ -25,18 +33,6 @@ export const Navbar = () => {
         </IconButton>
       </div>
     </div>
-  )
-};
-
-type NavButtonProps = {
-  children: React.ReactNode;
-};
-
-const NavButton = ({children}: NavButtonProps) => {
-  return (
-    <button className={styles.navButton}>
-      {children}
-    </button>
   )
 };
 
